@@ -2,7 +2,7 @@ const generateForm = document.querySelector(".generate-form");
 const generateBtn = generateForm.querySelector(".generate-btn");
 const imageGallery = document.querySelector(".image-gallery");
 
-const OPENAI_API_KEY = "YOUR-OPENAI-API-KEY-HERE"; // Your OpenAI API key here
+const OPENAI_API_KEY = "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"; // Your OpenAI API key here
 let isImageGenerating = false;
 
 const updateImageCard = (imgDataArray) => {
@@ -71,9 +71,9 @@ const handleImageGeneration = (e) => {
   // Creating HTML markup for image cards with loading state
   const imgCardMarkup = Array.from({ length: userImgQuantity }, () => 
       `<div class="img-card loading">
-        <img src="images/loader.svg" alt="AI generated image">
+        <img src="loader.svg" alt="AI generated image">
         <a class="download-btn" href="#">
-          <img src="images/download.svg" alt="download icon">
+          <img src="download.svg" alt="download icon">
         </a>
       </div>`
   ).join("");
