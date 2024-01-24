@@ -2,7 +2,7 @@ const generateForm = document.querySelector(".generate-form");
 const generateBtn = generateForm.querySelector(".generate-btn");
 const imageGallery = document.querySelector(".image-gallery");
 
-const OPENAI_API_KEY = "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"; // Your OpenAI API key here
+const OPENAI_API_KEY = "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"; // Your OpenAI API key here
 let isImageGenerating = false;
 
 const updateImageCard = (imgDataArray) => {
@@ -27,7 +27,7 @@ const updateImageCard = (imgDataArray) => {
 const generateAiImages = async (userPrompt, userImgQuantity) => {
   try {
     // Send a request to the OpenAI API to generate images based on user inputs
-    const response = await fetch("https://api.openai.com/v1/images/generations", {
+    const response = await fetch("https://api-inference.huggingface.co/models/dataautogpt3/OpenDalleV1.1", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
