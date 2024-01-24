@@ -27,7 +27,7 @@ const updateImageCard = (imgDataArray) => {
 const generateAiImages = async (userPrompt, userImgQuantity) => {
   try {
     // Send a request to the OpenAI API to generate images based on user inputs
-    const response = await fetch("https://api-inference.huggingface.co/models/dataautogpt3/OpenDalleV1.1", {
+    const response = await fetch("https://api-inference.huggingface.co/models/dataautogpt3/OpenDalle", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
